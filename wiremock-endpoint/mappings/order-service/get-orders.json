@@ -1,0 +1,19 @@
+{
+  "request": {
+    "method": "GET",
+    "urlPath": "/orders",
+    "queryParameters": {
+      "userId": {
+        "matches": "1"
+      }
+    }
+  },
+  "response": {
+    "status": 200,
+    "body": "{\"orderId\":1,\"userId\":1,\"amount\":\"49.99\"}",
+    "headers": {
+      "Content-Type": "application/json"
+    }
+  }
+}
+

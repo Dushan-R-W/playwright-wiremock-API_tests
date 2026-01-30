@@ -1,0 +1,19 @@
+{
+  "request": {
+    "method": "GET",
+    "urlPath": "/users",
+    "queryParameters": {
+      "id": {
+        "matches": "1"
+      }
+    }
+  },
+  "response": {
+    "status": 200,
+    "body": "{\"id\":1,\"name\":\"Alice\",\"email\":\"alice@example.com\"}",
+    "headers": {
+      "Content-Type": "application/json"
+    }
+  }
+}
+

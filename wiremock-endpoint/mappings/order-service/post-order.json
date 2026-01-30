@@ -1,0 +1,17 @@
+{
+    "request": {
+      "method": "POST",
+      "urlPath": "/order"
+    },
+    "response": {
+      "status": 200,
+      "jsonBody": { "orderId": "{{request.body.orderId}}", 
+                    "userId": "{{request.body.userId}}}}",
+                    "amount": "{{request.body.amount}}"
+                },
+      "headers": {
+        "Content-Type": "application/json"
+      }
+    }
+  }
+  

@@ -1,0 +1,16 @@
+services:
+  user-service:
+    image: wiremock/wiremock
+    volumes:
+      - ./wiremock-endpoint/__files:/home/wiremock/__files
+      - ./wiremock-endpoint/mappings:/home/wiremock/mappings
+    ports:
+      - 3001:8080
+
+  order-service:
+    image: wiremock/wiremock
+    volumes:
+      - ./wiremock-endpoint/__files:/home/wiremock/__files
+      - ./wiremock-endpoint/mappings:/home/wiremock/mappings
+    ports:
+      - 3002:8080
